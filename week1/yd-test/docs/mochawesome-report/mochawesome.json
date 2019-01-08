@@ -1,0 +1,81 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-01-07T14:19:26.912Z",
+    "end": "2019-01-07T14:19:27.043Z",
+    "duration": 131,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "abc3f24b-7355-4266-a00d-64380a017fc0",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "edc18bc0-28b5-45d5-8987-4f15e47d8d81",
+        "title": "node接口测试",
+        "fullFile": "/Users/yuanzhijia/Desktop/yd-test/service/router.spec.js",
+        "file": "/service/router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test接口测试",
+            "fullTitle": "node接口测试 test接口测试",
+            "timedOut": false,
+            "duration": 74,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "axios.get(\"http://localhost:3000/test\")\n.then(function(response){\n    if(response.data.result == \"Hello !\"){\n        done();\n    }else{\n        done(new Error(\"请求接口数据出错\"))\n    }\n})\n.catch(function(error){\n    done(error);\n})",
+            "err": {
+              "message": "Error: 请求接口数据出错",
+              "estack": "Error: 请求接口数据出错\n    at /Users/yuanzhijia/Desktop/yd-test/service/router.spec.js:9:22\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+            },
+            "isRoot": false,
+            "uuid": "f3c25154-0ff5-4874-ab0d-ddc603de7ba3",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "f3c25154-0ff5-4874-ab0d-ddc603de7ba3"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 74,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}
